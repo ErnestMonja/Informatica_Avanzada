@@ -1,6 +1,5 @@
- 
-
-public enum Faccion{
+public enum Faccion
+{
     EQUIPO_ROJO,
     EQUIPO_AZUL
 }
