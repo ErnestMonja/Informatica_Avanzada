@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=PersonajeTest
+comment0.text=\r\n\ La\ clase\ de\ Prueba\ PersonajeTest.\r\n\r\n\ @author\ \ Maximiliano\ A.\ Eschoyez\ y\ resuelto\ por\ Ernes.\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=PersonajeTest()
+comment1.text=\r\n\ Constructor\ por\ defecto\ de\ la\ clase\ PersonajeTest.\r\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\r\n\ Establece\ el\ fixture\ para\ la\ prueba.\r\n\ Se\ invoca\ antes\ de\ la\ ejecuci\u00F3n\ de\ cada\ m\u00E9todo.\r\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\r\n\ Destruye\ el\ fixture\ para\ la\ prueba.\r\n\ Se\ invoca\ despu\u00E9s\ de\ la\ ejecuci\u00F3n\ de\ cada\ m\u00E9todo.\r\n
+comment4.params=
+comment4.target=void\ test()
+comment4.text=\r\n\ M\u00E9todo\ de\ prueba\ propuesto\ por\ el\ TP\ el\ cual\ solo\ fue\ pasado\ de\ una\ clase\r\n\ normal\ a\ una\ clase\ de\ prueba.\r\n
+numComments=5

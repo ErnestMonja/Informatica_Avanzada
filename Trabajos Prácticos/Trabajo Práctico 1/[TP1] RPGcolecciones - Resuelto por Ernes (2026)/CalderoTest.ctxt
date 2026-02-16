@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CalderoTest
+comment0.text=\r\n\ La\ clase\ de\ Prueba\ CalderoTest.\r\n\r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=CalderoTest()
+comment1.text=\r\n\ Constructor\ por\ defecto\ de\ la\ claseCalderoTest\r\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\r\n\ Establece\ el\ fixture\ para\ la\ prueba.\r\n\ \r\n\ Se\ invoca\ antes\ de\ la\ ejecuci\u00F3n\ de\ cada\ m\u00E9todo.\r\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\r\n\ Destruye\ el\ fixture\ para\ la\ prueba.\r\n\ \r\n\ Se\ invoca\ despu\u00E9s\ de\ la\ ejecuci\u00F3n\ de\ cada\ m\u00E9todo.\r\n
+comment4.params=
+comment4.target=void\ testCaldero()
+comment4.text=\r\n\ M\u00E9todo\ de\ prueba\ para\ Caldero\ seg\u00FAn\ Ernes.\r\n
+numComments=5
