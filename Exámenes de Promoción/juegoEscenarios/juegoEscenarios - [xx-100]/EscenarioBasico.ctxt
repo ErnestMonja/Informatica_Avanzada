@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=EscenarioBasico
+comment0.text=\r\n\ La\ clase\ EscenarioBasico\ a\ completar.\r\n\ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.1\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ xx/20\r\n
+comment1.params=nombre\ capacidad
+comment1.target=EscenarioBasico(java.lang.String,\ java.lang.Integer)
+comment1.text=\r\n\ Crea\ un\ escenario\ basico\ con\ nombre\ y\ capacidad\ de\ alojar\ personajes\ no\ jugadores.\r\n\r\n\ @param\ nombre\ \ \ \ \ \ \ \ El\ nombre\ del\ escenario.\r\n\ @param\ capacidad\ \ \ \ \ La\ cantidad\ de\ Personajes\ no\ jugadores\ que\ puedenagregarse.\r\n
+comment2.params=p
+comment2.target=void\ visitar(PersonajeJugador)
+comment2.text=\r\n\ Visita\ el\ escenario\ actualizando\ el\ escenarioActual\ del\ personaje\ y\ agregandolo\ a\ la\ lista\ de\ visitantes.\r\n\r\n\ @param\ p\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ personaje\ jugador\ que\ visita\ el\ escenario\r\n\ @throws\ IllegalStateException\ \ \ \ Si\ el\ personaje\ jugador\ tiene\ un\ arma\ como\ elemento\ actual\r\n
+comment3.params=p
+comment3.target=void\ addPersonaje(PersonajeNoJugador)
+comment3.text=\r\n\ Agrega\ un\ personaje\ no\ jugador\ al\ escenario.\r\n\r\n\ @param\ p\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ personaje\ no\ jugador\ a\ agregar\r\n\ @throws\ IllegalStateException\ \ \ \ Si\ el\ escenario\ esta\ lleno\ y\ no\ puede\ agregar\ mas\ personajes\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ getPersonajes()
+comment4.text=\r\n\ Devuelve\ una\ lista\ de\ PersonajeNoJugador\ que\ representa\ los\ personajes\r\n\ no\ jugadores\ actualmente\ en\ el\ escenario.\r\n\r\n\ @return\ la\ lista\ de\ personajes\ no\ jugadores\ en\ el\ escenario\r\n
+numComments=5

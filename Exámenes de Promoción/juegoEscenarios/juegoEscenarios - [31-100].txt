@@ -1,0 +1,523 @@
+--------------------------------1-[12/20]--------------------------------------
+public class Arma extends Elemento
+{
+    List<Municion> municiones;
+    TipoMunicion tipoMunicion;
+
+    /**
+     * Constructor de Arma
+     * @param nombre
+     * @param tipoMunicion
+     */
+    public Arma(String nombre, TipoMunicion tipoMunicion)
+    {
+        super(nombre);
+        municiones = new ArrayList<>();
+        // TODO - Implementar el constructor
+    }
+
+    /**
+     * Agrega la municion a la lista de municiones.
+     * Lanza MunicionNoValidaException si la municion no coincide con el tipo
+     * de municion del arma.
+     * @param m la municion a cargar
+     * @throws MunicionNoValidaException si la municion no coincide con el
+     *           tipo de municion del arma.
+     */
+    public void cargar (Municion m) throws MunicionNoValidaException
+    {
+        if((m.getTipo()!=TipoMunicion.COMUN)&&(m.getTipo()!=TipoMunicion.EXPLOSIVA)&&(m.getTipo()!=TipoMunicion.HUMO))
+        {
+            throw new MunicionNoValidaException("");
+        }
+        else
+        {
+            municiones.add(m);
+        }
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Remueve la primera municion de la lista y retorna el danio
+     * de la misma.
+     * Arroja ArmaDescargadaException si no hay municiones
+     * 
+     * @return el valor de danio de la municion removida
+     * @throws ArmaDescargadaException si no hay municiones disponibles
+     */
+    public Integer disparar() throws ArmaDescargadaException
+    {
+        Municion m = municiones.get(0);
+        Integer danio = m.getDanio();
+        if(municiones.size()==0)
+        {
+            throw new ArmaDescargadaException("");
+        }
+        else
+        {
+            municiones.remove(0);
+        }
+        return danio;
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Verifica si existen municiones cargadas en la lista.
+     * @return true si hay municiones cargadas, false de lo contrario
+     */
+    public Boolean isCargada()
+    {
+        if(municiones.size()>0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+        // TODO - Implementar el metodo
+    }
+}
+
+--------------------------------2-[8/20]--------------------------------------
+
+public class EscenarioBasico extends Escenario
+{
+    private ArrayList<PersonajeNoJugador> personajes;
+
+    /**
+     * Crea un escenario basico con nombre y capacidad de alojar
+     * personajes no jugadores.
+     *
+     * @param nombre El nombre del escenario
+     * @param capacidad La cantidad de Personajes no jugadores que pueden
+     *                  agregarse
+     */
+    public EscenarioBasico(String nombre, Integer capacidad)
+    {
+        super(nombre,capacidad);
+        personajes = new ArrayList<PersonajeNoJugador>();
+        // TODO - Implementar el constructor
+    }
+
+    /**
+     * Visita el escenario actualizando el escenarioActual del personaje
+     * y agregandolo a la lista de visitantes.
+     *
+     * @param p el personaje jugador que visita el escenario
+     * @throws IllegalStateException si el personaje jugador tiene un arma como elemento actual
+     */
+    @Override
+    public void visitar(PersonajeJugador p)
+    {
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Agrega un personaje no jugador al escenario.
+     *
+     * @param p el personaje no jugador a agregar
+     * @throws IllegalStateException si el escenario esta lleno y no puede agregar mas personajes
+     */
+    public void addPersonaje(PersonajeNoJugador p)
+    {
+        if(this.getCapacidad() <= personajes.size())
+        {
+            throw new IllegalStateException();
+        }
+        personajes.add(p);
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Devuelve una lista de PersonajeNoJugador que representa los personajes
+     * no jugadores actualmente en el escenario.
+     *
+     * @return la lista de personajes no jugadores en el escenario
+     */
+    public ArrayList<PersonajeNoJugador> getPersonajes()
+    {
+        ArrayList<PersonajeNoJugador> persNoJug = new ArrayList<>();
+        for(PersonajeNoJugador p : personajes)
+        {
+            if(p instanceof PersonajeNoJugador)
+            {
+                PersonajeNoJugador pnj = (PersonajeNoJugador) p;
+                persNoJug.add(p);
+            }
+        }
+        return persNoJug;
+        // TODO - Implementar el metodo
+    }
+}
+
+--------------------------------3-[7/30]--------------------------------------
+
+public class EscenarioDeCombate extends Escenario
+{
+    private ArrayList<PersonajeNoJugadorGuerrero> enemigos;
+
+    public EscenarioDeCombate(String nombre, Integer capacidad)
+    {
+        super(nombre, capacidad);
+        enemigos = new ArrayList<>();
+    }
+
+    /**
+     * Actualiza la posicion actual del personaje y agrega el personaje
+     * a la lista de visitantes del escenario.
+     * Si hay enemigos y el personaje tiene un arma como elemento actual
+     * simula ademas una batalla (metodo interno)
+     * Si el numero de enemigos en el escenario es mayor a cero y el
+     * personaje no tiene como elemento actual un arma lanza
+     * IllegalStateException y no actualiza la lista de visitantes ni la
+     * posicion del personaje.
+     * @param p El pesonaje jugador que visita el escenario
+     * @throws IllegalStateException cuando hay enemigos y el personaje
+     * no tiene seleccionada un arma
+     */
+    @Override
+    public void visitar(PersonajeJugador p)
+    {
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Agrega un personaje a la lista de personajes enemigos del escenario.
+     * Debe validar el nombre para evitar duplicados. En caso de que ya
+     * exista un personaje con el mismo nombre arroja InvalidArgumentException
+     * 
+     * @param p el personaje no jugador guerrero a agregar
+     * @throws IllegalArgumentException si hay un personaje con el mismo
+     * nombre en la lista
+     */
+    public void addPersonaje(PersonajeNoJugadorGuerrero p)
+    {
+        if(enemigos.contains(p.getNombre()))
+        {
+            throw new IllegalArgumentException();
+        }
+        else
+        {
+            enemigos.add(p);
+        }
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Remueve un personaje de nombre "name" de la lista de
+     * personajes enemigos del mapa. Si el pesonaje no esta en la lista
+     * arroja IllegalArgumentException.
+     * @param name El nombre del personaje a remover
+     * @return El personaje removido de la lista
+     * @throws IllegalArgumentException si el personaje no esta en la lista
+     */
+    public PersonajeNoJugadorGuerrero removePersonaje(String name)
+    {
+        //if(enemigos.contains(name))
+        //{
+        //    throw new IllegalArgumentException();
+        //}
+        //else
+        //{
+        //    Integer n = enemgo
+        //   PersonajeNoJugadorGuerrero pnjg = enemigos.get(n);
+        //    enemigos.remove(pnjg);
+        //}
+        return null;
+        // TODO - Implementar el metodo
+    }
+
+    /**
+     * Simula una batalla en el escenario.
+     * Se simularan tantos pasos de batalla como sea necesario
+     * hasta que el personaje jugador muera (vida =< 0) o
+     * mueran todos sus enemigos.
+     * En cada paso de batalla deberan ejecutarse las siguientes
+     * acciones:
+     * - Verificar si todavia hay enemigos y si el jugador tiene
+     * vida > 0
+     * - Recorrer la lista de enemigos
+     *      - Efectuar un ataque del enemigo
+     *      - Efectuar un ataque del personaje
+     * - Verificar si algun enemigo tiene vida <= 0 y removerlo
+     * de la lista
+     * Al finalizar la batalla debe reasignarse la vida inicial
+     * del personaje solo si no fue derrotado.
+     * @param p el personaje jugador
+     */
+    public void simularBatalla (PersonajeJugador p) {
+        Integer vidaInicial = p.getVida();
+        while (!enemigos.isEmpty() && p.getVida() > 0) {
+            for (PersonajeNoJugadorGuerrero g : enemigos) {
+                try {
+                    if (g.getVida() > 0) {
+                        g.atacar(p);
+                    }
+                } catch (ArmaDescargadaException ignore) {
+
+                }
+                try {
+                    if (p.getVida() > 0) {
+                        p.atacar(g);
+                    }
+                } catch (ArmaDescargadaException ignore) {
+
+                }
+            }
+            enemigos.removeIf(g -> g.getVida() <= 0);
+        }
+        if (p.getVida() > 0) {
+            p.setVida(vidaInicial);
+        }
+    }
+
+    /**
+     * Retorna la lista de enemigos actualmente en la batalla.
+     *
+     * @return la lista de enemigos
+     */
+    public ArrayList<PersonajeNoJugadorGuerrero> getEnemigos()
+    {
+        return enemigos;
+        // TODO - Implementar el metodo
+    }
+}
+
+
+--------------------------------4-[5/30]--------------------------------------
+
+ class PersonajeJugador extends Personaje implements Guerrero {
+    private Elemento elementoActual;
+    private Integer nivel;
+    private Mision mision;
+    private Escenario escenarioActual;
+    private EstadoMision estado;
+    /**
+     * Crea un nuevo Personaje Jugador con su nombre y cantidad de vida
+     *
+     * @param nombre El nombre del personaje
+     * @param vida La vida del personaje
+     */
+    public PersonajeJugador(String nombre, Integer vida) {
+        super(nombre, vida);
+        this.nivel = 1;
+        this.estado = new MisionNoAsignada();
+    }
+
+    /**
+     * Retorna el elemento actual del personaje jugador.
+     *
+     * @return el elemento actual del personaje jugador
+     */
+    public Elemento getElementoActual() {
+        return elementoActual;
+    }
+
+    /**
+     * Establece el elemento actual del personaje jugador.
+     *
+     * @param elementoActual el nuevo elemento actual del personaje jugador
+     */
+    public void setElementoActual(Elemento elementoActual) {
+        this.elementoActual = elementoActual;
+    }
+
+    /**
+     * Realiza un ataque al enemigo.
+     *
+     * @param enemigo el personaje enemigo al que se va a atacar
+     * @throws ArmaDescargadaException si el arma estÃ¡ descargada y no se puede disparar
+     */
+    @Override
+    public void atacar(Personaje enemigo) throws ArmaDescargadaException {
+        enemigo.recibirDanio(((Arma) elementoActual).disparar());
+    }
+
+    /**
+     * Guarda el elemento actual en la bolsa.
+     *
+     * @throws BolsaLlenaException si la bolsa estÃ¡ llena y no se puede guardar el elemento
+     */
+    public void guardarElemento() throws BolsaLlenaException {
+        getBolsa().addElemento(this.elementoActual);
+        this.elementoActual = null;
+    }
+
+    public void subirNivel() {
+        this.nivel += 1;
+    }
+
+    public Integer getNivel() {
+        return nivel;
+    }
+
+    public Mision getMision() {
+        return mision;
+    }
+
+    public EstadoMision getEstadoMision() {
+        return estado;
+    }
+
+    public void setMision(Mision mision) {
+        this.mision = mision;
+    }
+
+    public void setEstadoMision(EstadoMision estado) {
+        this.estado = estado;
+    }
+
+    public Escenario getEscenarioActual() {
+        return escenarioActual;
+    }
+
+    public void setEscenarioActual(Escenario escenarioActual) {
+        this.escenarioActual = escenarioActual;
+    }
+
+    public void asignarMision(Mision m) {
+        setMision(m);
+        estado.asignarMision(this);
+    }
+
+    public void aceptarMision() {
+        estado.aceptarMision(this);
+    }
+
+    public void cumplirMision() {
+        estado.cumplirMision(this);
+    }
+
+    public Boolean isMisionFinalizada () {
+        return estado instanceof MisionFinalizada;
+    }
+
+    /**
+     * Define un patron State para la mision
+     * - Estado MisionNoAsignada : Solo puede asignarse la mision a un personaje.
+     * Cualquier otra accion debe lanzar IllegalStateException.
+     * - Estado MisionAsignada : Solo puede aceptarse la mision. Cualquier otra
+     * accion debe lanzar IllegalStateException.
+     * - Estado MisionAceptada : Solo puede cumplirse la mision. Cualquier otra
+     * accion debe lanzar IllegalStateException.
+     * - Estado MisionFinalizada : No puede realizarse ninguna accion. Cualquier
+     * llamada a metodos en este estado debe lanzar IllegalStateException.
+     */
+     abstract class EstadoMision {
+
+        public abstract void asignarMision(PersonajeJugador p);
+
+        public abstract void aceptarMision(PersonajeJugador p);
+
+        public abstract void cumplirMision(PersonajeJugador p);
+
+        public String toString() {
+            return this.getClass().getSimpleName();
+        }
+    }
+
+    class MisionNoAsignada extends EstadoMision {
+        /**
+         * Asigna la mision al personaje y cambia el estado de la mision.
+         * @param p el personaje al cual asignarle la mision.
+         */
+        @Override
+        public void asignarMision(PersonajeJugador p)
+        {
+            // TODO - Implementar el metodo
+        }
+
+        @Override
+        public void aceptarMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+
+        @Override
+        public void cumplirMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+
+    }
+
+    class MisionAsignada extends EstadoMision {
+        @Override
+        public void asignarMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+
+        /**
+         * Valida que el personaje tenga asignada la mision y el nivel requerido
+         * realizarla. Si puede aceptarla cambia su estado a Aceptada.
+         * Si el personaje no tiene nivel suficiente para aceptar la mision
+         * lanza IllegalStateException.
+         * @param p el personaje que quiere aceptar la mision.
+         */
+        @Override
+        public void aceptarMision(PersonajeJugador p) {
+            // TODO - Implementar el metodo
+        }
+
+        @Override
+        public void cumplirMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+    }
+
+    class MisionAceptada extends EstadoMision {
+        @Override
+        public void asignarMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+
+        @Override
+        public void aceptarMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+
+        /**
+         * Valida que el personaje tenga asignada la mision y
+         * el cumplimiento de la misma. Si se cumplen ambas condiciones
+         * cambia su estado a Finalizada.
+         * Si la mision no esta completa arroja IllegalArgumentException.
+         * @param p el personaje que quiere cumplir la mision.
+         */
+        @Override
+        public void cumplirMision(PersonajeJugador p) {
+            // TODO - Implementar el metodo
+        }
+    }
+
+    class MisionFinalizada extends EstadoMision {
+        @Override
+        public void asignarMision(PersonajeJugador p) {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+
+        @Override
+        public void aceptarMision(PersonajeJugador p) {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+        @Override
+        public void cumplirMision(PersonajeJugador p)
+        {
+            throw new IllegalStateException();
+            // TODO - Implementar el metodo
+        }
+    }
+}
+
+
+

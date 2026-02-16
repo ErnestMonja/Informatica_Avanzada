@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=EscenarioDeCombate
+comment0.text=\r\n\ La\ clase\ EscenarioDeCombate\ a\ completar.\r\n\ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.1\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ xx/30\r\n
+comment1.params=nombre\ capacidad
+comment1.target=EscenarioDeCombate(java.lang.String,\ java.lang.Integer)
+comment2.params=p
+comment2.target=void\ visitar(PersonajeJugador)
+comment2.text=\r\n\ Actualiza\ la\ posici\u00F3n\ actual\ del\ personaje\ y\ agrega\ el\ personaje\r\n\ a\ la\ lista\ de\ visitantes\ del\ escenario.\r\n\ \r\n\ Si\ hay\ enemigos\ y\ el\ personaje\ tiene\ un\ arma\ como\ elemento\ actual\r\n\ simula\ ademas\ una\ batalla\ (metodo\ interno)\r\n\ \r\n\ Si\ el\ n\u00FAmero\ de\ enemigos\ en\ el\ escenario\ es\ mayor\ a\ cero\ y\ el\r\n\ personaje\ no\ tiene\ como\ elemento\ actual\ un\ arma\ lanza\ IllegalStateException\ \r\n\ y\ no\ actualiza\ la\ lista\ de\ visitantes\ ni\ la\ posicion\ del\ personaje.\r\n\ \r\n\ @param\ \ p\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ pesonaje\ jugador\ que\ visita\ el\ escenario\r\n\ @throws\ IllegalStateException\ \ \ \ cuando\ hay\ enemigos\ y\ el\ personaje\ no\ tiene\ seleccionada\ un\ arma\r\n
+comment3.params=p
+comment3.target=void\ addPersonaje(PersonajeNoJugadorGuerrero)
+comment3.text=\r\n\ Agrega\ un\ personaje\ a\ la\ lista\ de\ personajes\ enemigos\ del\ escenario.\r\n\ \r\n\ Debe\ v\u00E1lidar\ el\ nombre\ para\ evitar\ duplicados.\ En\ caso\ de\ que\ ya\r\n\ exista\ un\ personaje\ con\ el\ mismo\ nombre\ arroja\ IllegalArgumentException.\r\n\ \r\n\ @param\ \ p\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ personaje\ no\ jugador\ guerrero\ a\ agregar.\r\n\ @throws\ IllegalArgumentException\ Si\ hay\ un\ personaje\ con\ el\ mismo\ nombre\ en\ la\ lista.\r\n
+comment4.params=name
+comment4.target=PersonajeNoJugadorGuerrero\ removePersonaje(java.lang.String)
+comment4.text=\r\n\ Remueve\ un\ personaje\ de\ nombre\ "name"\ de\ la\ lista\ de\ personajes\ enemigos\ del\ mapa.\ Si\ el\ pesonaje\ no\ esta\ en\ la\ lista\r\n\ arroja\ IllegalArgumentException.\r\n\ \r\n\ @param\ \ name\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ nombre\ del\ personaje\ a\ remover.\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ personaje\ removido\ de\ la\ lista.\r\n\ @throws\ IllegalArgumentException\ \ \ \ \ Si\ el\ personaje\ no\ esta\ en\ la\ lista.\r\n
+comment5.params=p
+comment5.target=void\ simularBatalla(PersonajeJugador)
+comment5.text=\r\n\ Simula\ una\ batalla\ en\ el\ escenario.\r\n\ \r\n\ Se\ simularan\ tantos\ pasos\ de\ batalla\ como\ sea\ necesario\ hasta\ que\ el\ personaje\ jugador\ muera\ (vida\ \=<\ 0)\ o\r\n\ mueran\ todos\ sus\ enemigos.\r\n\r\n\ En\ cada\ paso\ de\ batalla\ deberan\ ejecutarse\ las\ siguientes\ acciones\:\r\n\ \ -\ Verificar\ si\ todavia\ hay\ enemigos\ y\ si\ el\ jugador\ tiene\ vida\ >\ 0.\r\n\ \ -\ Recorrer\ la\ lista\ de\ enemigos\:\r\n\ \ \ \ \ \ -\ Efectuar\ un\ ataque\ del\ enemigo.\r\n\ \ \ \ \ \ -\ Efectuar\ un\ ataque\ del\ personaje.\r\n\ -\ Verificar\ si\ algun\ enemigo\ tiene\ vida\ <\=\ 0\ y\ removerlo\ de\ la\ lista.\r\n\r\n\ Al\ finalizar\ la\ batalla\ debe\ reasignarse\ la\ vida\ inicial\ del\ personaje\ solo\ si\ no\ fue\ derrotado.\r\n\ \r\n\ @param\ p\ \ \ \ \ El\ personaje\ jugador.\r\n
+comment6.params=
+comment6.target=java.util.ArrayList\ getEnemigos()
+comment6.text=\r\n\ Retorna\ la\ lista\ de\ enemigos\ actualmente\ en\ la\ batalla.\r\n\r\n\ @return\ \ la\ lista\ de\ enemigos.\r\n
+numComments=7
