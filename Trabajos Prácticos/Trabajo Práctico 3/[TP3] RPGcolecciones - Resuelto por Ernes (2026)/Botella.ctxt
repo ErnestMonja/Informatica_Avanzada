@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.target=Botella
+comment0.text=\r\n\ Clase\ Botella\ que\ extiende\ a\ Recipiente\ e\ implementa\ a\ Portable.\r\n\ \r\n\ @author\ \ Maximiliano\ A.\ Eschoyez\ y\ resuelto\ por\ Ernes.\r\n\ @version\ 1.0\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [PUNTAJE\ xx/20]\r\n
+comment1.params=
+comment1.target=Botella()
+comment1.text=\r\n\ Crea\ una\ botella\ para\ transportar\ liquido.\r\n\ \r\n\ Debe\ inicializarse\ con\ el\ peso\ propio\ y\ en\ estado\ vacia.\r\n
+comment10.params=
+comment10.target=EstadoContenedor\ getEstado()
+comment2.params=liquido
+comment2.target=void\ llenarBotella(Elemento)
+comment2.text=\r\n\ Delegate\ methods\ para\ acceder\ a\ los\ m\u00E9todos\ apropiados\ en\ base\ al\ estado\ del\ objeto.\r\n\ \r\n\ Llena\ la\ botella\ con\ el\ l\u00EDquido\ indicado\ agregando\ el\ peso\ del\ nuevo\ l\u00EDquido.\ Genera\ el\ nuevo\ nombre\ de\ la\ botella\ y\ actualiza\r\n\ el\ peso.\r\n\ \r\n\ @param\ liquido\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ liquido\ para\ rellenar\ la\ botella\r\n\ @throws\ ContenedorLlenoException\ \ \ \ \ En\ caso\ que\ la\ botella\ se\ encuentre\ llena\ con\ el\ mensaje\:\ "Botella\ llena".\r\n\ @throws\ AccionNoPermitidaException\ \ \ En\ caso\ que\ el\ elemento\ no\ sea\ un\ liquido\ con\ el\ mensaje\:\ "Botella\ no\ admite\ <elemento>"\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ con\ (<elemento>\ \=\=\ nombre\ del\ elemento).\r\n
+comment3.params=elemento
+comment3.target=void\ addElemento(Elemento)
+comment4.params=
+comment4.target=Elemento\ vaciarBotella()
+comment4.text=\r\n\ Delegate\ methods\ para\ acceder\ a\ los\ m\u00E9todos\ apropiados\ en\ base\ al\ estado\ del\ objeto.\r\n\ \r\n\ Vacia\ el\ contenido\ de\ la\ botella\ y\ actualiza\ el\ peso.\ La\ botella\ queda\ lista\ para\ recargar.\ Genera\ el\ nuevo\ nombre\r\n\ de\ la\ botella\ y\ actualiza\ el\ peso.\r\n\ \r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ contenido\ de\ la\ botella.\r\n\ @throws\ ContenedorVacioException\ \ \ \ \ En\ caso\ que\ la\ botella\ se\ encuentre\ vac\u00EDa\ con\ el\ mensaje\:\ "Botella\ vacia".\r\n\ @throws\ AccionNoPermitidaException\ \ \ No\ aplica.\r\n
+comment5.params=
+comment5.target=Elemento\ getElemento()
+comment6.params=nombre
+comment6.target=Elemento\ getElemento(java.lang.String)
+comment6.text=\r\n\ Se\ utiliza\ la\ versi\u00F3n\ implementada\ en\ EstadoContenedor,\ que\ siempre\ lanza\ la\ excepci\u00F3n\ AccionNoPermitidaException.\r\n
+comment7.params=
+comment7.target=void\ generarNombre()
+comment7.text=\r\n\ Establece\ la\ descripci\u00F3n\ de\ la\ botella\ con\ su\ contenido\ correspondiente,\ por\ ej.\ "Botella\ con\ Agua".\r\n\ \r\n\ En\ caso\ de\ que\ no\ tenga\ contenido,\ utiliza\ el\ texto\ "Botella\ vacia".\r\n
+comment8.params=
+comment8.target=Elemento\ getContenido()
+comment9.params=contenido
+comment9.target=void\ setContenido(Elemento)
+numComments=11

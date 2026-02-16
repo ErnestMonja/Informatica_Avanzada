@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=EstadoContenedor
+comment0.text=\r\n\ Esta\ clase\ abstracta\ es\ una\ implementaci\u00F3n\ b\u00E1sica\ de\ la\ interface\ Contenedor\ para\ facilitar\ su\ uso.\r\n\ \r\n\ La\ implementaci\u00F3n\ del\ patron\ state\ en\ las\ clases\ que\ implementan\ la\ interface\ Contenedor\ requiere\ definir\ \r\n\ los\ estados.\ Heredando\ desde\ esta\ clase,\ solo\ hace\ falta\ definir\ los\ m\u00E9todos\ necesarios\ por\ sobreescritura\ \r\n\ y\ no\ su\ totalidad.\r\n\ \r\n\ El\ estado\ inicial\ no\ permite\ el\ uso\ de\ las\ funcionalidades.\r\n
+comment1.params=elemento
+comment1.target=void\ addElemento(Elemento)
+comment2.params=
+comment2.target=Elemento\ getElemento()
+comment3.params=nombre
+comment3.target=Elemento\ getElemento(java.lang.String)
+numComments=4

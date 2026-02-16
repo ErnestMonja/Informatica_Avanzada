@@ -1,0 +1,35 @@
+#BlueJ class context
+comment0.target=Carcaj
+comment0.text=\r\n\ Modela\ el\ Carcaj\ que\ lleva\ el\ personaje\ para\ tranportar\ sus\ flechas.\r\n\ \ \r\n\ @author\ \ Maximiliano\ A.\ Eschoyez\ y\ resuelto\ por\ Ernes.\r\n\ @version\ 1.0\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [PUNTAJE\ xx/20]\r\n
+comment1.params=
+comment1.target=Carcaj()
+comment1.text=\r\n\ Constructor\ para\ un\ Carcaj\ generico\ chico.\ Su\ capacidad\ es\ de\ 5\ flechas\ y\ se\ inicializa\ en\ estado\ vacio\ (ver\r\n\ Arroyo\ y\ Barrica\ a\ modo\ de\ ejemplo\ de\ los\ estados).\ Recordar\ que\ tiene\ peso\ inicial.\r\n
+comment10.params=
+comment10.target=java.lang.Integer\ getCantidadFlechas()
+comment11.params=
+comment11.target=java.lang.Integer\ getCapacidad()
+comment12.params=
+comment12.target=EstadoContenedor\ getEstado()
+comment2.params=nombre\ capacidad
+comment2.target=Carcaj(java.lang.String,\ java.lang.Integer)
+comment2.text=\r\n\ Constructor\ para\ un\ Carcaj\ de\ nombre\ y\ capacidad\ indicados\ por\ par\u00E1metro.\ Se\ inicializa\ en\ estado\ vacio\ (ver\r\n\ Arroyo\ y\ Barrica\ a\ modo\ de\ ejemplo\ de\ los\ estados)\ Recordar\ que\ tiene\ peso\ inicial.\r\n\r\n\ @param\ nombre\ \ \ \ \ \ \ \ El\ nombre\ del\ carcaj.\r\n\ @param\ capacidad\ \ \ \ \ Cantidad\ m\u00E1xima\ de\ flechas.\r\n
+comment3.params=elemento
+comment3.target=void\ addFlecha(Elemento)
+comment3.text=\r\n\ Delegate\ methods\ para\ acceder\ a\ los\ m\u00E9todos\ apropiados\ en\ base\ al\ estado\ del\ objeto.\r\n\ \r\n\ Agrega\ una\ flecha\ al\ carcaj.\ Debe\ actualizarse\ el\ peso\ total.\r\n\ \r\n\ @param\ \ flecha\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ La\ flecha\ a\ agregar.\r\n\ @throws\ ContenedorLlenoException\ \ \ \ \ En\ caso\ que\ el\ carcaj\ se\ encuentre\ en\ su\ capacidad\ m\u00E1xima\ con\ el\ mensaje\:\ "Carcaj\ lleno".\r\n\ @throws\ AccionNoPermitidaException\ \ \ En\ caso\ que\ el\ elemento\ no\ sea\ una\ flecha\ \ con\ el\ mensaje\:\ "Carcaj\ no\ admite\ <elemento>"\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (<elemento>\ \=\=\ nombre\ del\ elemento).\r\n
+comment4.params=elemento
+comment4.target=void\ addElemento(Elemento)
+comment5.params=
+comment5.target=Elemento\ getFlecha()
+comment5.text=\r\n\ Delegate\ methods\ para\ acceder\ a\ los\ m\u00E9todos\ apropiados\ en\ base\ al\ estado\ del\ objeto.\r\n\ \r\n\ Devuelve\ una\ flecha\ del\ carcaj\ como\ Elemento.\ Debe\ actualizarse\ el\ peso\ total.\r\n\ \r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Una\ flecha.\r\n\ @throws\ ContenedorVacioException\ \ \ \ \ En\ caso\ que\ el\ carcaj\ se\ encuentre\ vac\u00EDo\ con\ el\ mensaje\:\ "Carcaj\ vacio".\r\n\ @throws\ AccionNoPermitidaException\ \ \ No\ aplica.\r\n
+comment6.params=
+comment6.target=Elemento\ getElemento()
+comment7.params=nombre
+comment7.target=Elemento\ getElemento(java.lang.String)
+comment7.text=\r\n\ Se\ utiliza\ la\ version\ implementada\ en\ EstadoContenedor,\ que\ siempre\ lanza\ la\ excepcion\ AccionNoPermitidaException.\r\n
+comment8.params=peso
+comment8.target=void\ addPeso(java.lang.Integer)
+comment8.text=\r\n\ Modifica\ el\ peso\ del\ carcaj.\ Puede\ sumar\ o\ restar\ peso.\r\n\r\n\ @param\ peso\ \ El\ peso\ a\ modificar.\r\n
+comment9.params=
+comment9.target=java.lang.String\ toString()
+comment9.text=\r\n\ Devuelve\ informacion\ sobre\ el\ carcaj\ de\ la\ forma\:\r\n\ \ \ \ \ \ \ \ \ \ "<nombre>\ <estado>"\r\n\ donde\ <nombre>\ es\ el\ nombre\ del\ carcaj\ y\ <estado>\ es\ el\ toString\ de\ cada\ estado.\r\n
+numComments=13

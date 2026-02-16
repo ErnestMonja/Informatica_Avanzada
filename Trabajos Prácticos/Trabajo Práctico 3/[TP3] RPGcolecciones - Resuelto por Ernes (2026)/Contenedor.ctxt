@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Contenedor
+comment0.text=\r\n\ Esta\ interface\ se\ utiliza\ para\ implementar\ funcionalidad\ a\ los\ contenedores.\ Como\ puede\ verse,\ este\ rol\ \r\n\ es\ transversal\ a\ varias\ jerarquias\ de\ herencia.\r\n\ \r\n\ En\ cada\ clase\ que\ implemente\ esta\ inteface\ se\ debe\ implementar\ el\ patron\ "state"\ (relacionado\ con\ maquina\r\n\ de\ estados).\ Este\ patron\ de\ dise\u00F1o\ facilitar\ el\ uso,\ mantenimiento\ y\ extension\ del\ software.\r\n\ \r\n\ Ref.\ https\://blogs.oracle.com/javamagazine/the-state-pattern\r\n\ \r\n\ Ver\ clases\ Arroyo\ y\ Barrica\ como\ ejemplos.\r\n
+comment1.params=elemento
+comment1.target=void\ addElemento(Elemento)
+comment1.text=\r\n\ El\ contenedor\ recibe\ un\ elemento\ para\ agregar.\r\n\ \r\n\ Solo\ admite\ el\ elemento\ indicado\ si\ se\ corresponde\ con\ el\ tipo\ esperado\ a\ la\ clase\ que\ lo\ implementa\ \r\n\ y\ si\ se\ encuentra\ en\ uno\ de\ los\ estados\ no\ lleno.\r\n\ \r\n\ @param\ \ \ elemento\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ elemento\ a\ agregar.\r\n\ @throws\ \ ContenedorLlenoException\ \ \ \ En\ caso\ que\ el\ contenedor\ no\ tenga\ lugar\ disponible.\r\n\ @throws\ \ AccionNoPermitidaException\ \ En\ caso\ que\ el\ elemento\ no\ se\ corresponda\ con\ el\ contenedor.\r\n
+comment2.params=
+comment2.target=Elemento\ getElemento()
+comment2.text=\r\n\ El\ contenedor\ entrega\ un\ elemento.\r\n\ \r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ elemento\ a\ entregar.\r\n\ @throws\ \ ContenedorVacioException\ \ \ \ En\ caso\ que\ el\ contenedor\ se\ encuentre\ vacio.\r\n
+comment3.params=nombre
+comment3.target=Elemento\ getElemento(java.lang.String)
+comment3.text=\r\n\ El\ contenedor\ entrega\ un\ elemento.\r\n\ \r\n\ @param\ \ \ nombre\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ nombre\ del\ objeto\ a\ entregar.\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ elemento\ a\ entregar.\r\n\ @throws\ \ AccionNoPermitidaException\ \ En\ caso\ que\ el\ contenedor\ no\ tenga\ almacenado\ el\ elemento\ solicitado.\r\n
+numComments=4
