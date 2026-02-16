@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Auto
+comment0.text=\r\n\ Implementaci\u00F3n\ de\ un\ Auto\ que\ transita\ por\ una\ determinada\ calle.\r\n\ \r\n\ El\ modelo\ tiene\ en\ cuenta\ las\ siguientes\ simplificaciones\:\r\n\ \ \ \ \ \ 1.\ El\ auto\ siempre\ transita\ por\ la\ misma\ calle\ (no\ puede\ doblar)\r\n\ \ \ \ \ \ 2.\ La\ direcciones\ posibles\ son\ adelante\ y\ atras.\ El\ auto\ no\ cambia\ de\ direcci\u00F3n\ en\ ning\u00FAn\ momento\r\n\ \ \ \ \ \ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ 40/40\r\n
+comment1.params=calle_inicial\ direccion\ lugar_inicial
+comment1.target=Auto(Calle,\ Auto.DIRECCION,\ java.lang.Integer)
+comment1.text=\r\n\ Inicializacion\ del\ auto.\r\n\ \r\n\ @param\ calle_inicial\ \ Calle\ por\ la\ cual\ el\ auto\ va\ a\ transitar.\r\n\ @param\ direccion\ \ \ \ \ \ Direcci\u00F3n\ en\ la\ cual\ puede\ transitar\ (@see\ DIRECCION).\r\n\ @param\ lugar_inicial\ \ Lugar\ inicial\ dentro\ de\ la\ calle\ en\ la\ cual\ inicia\ su\ recorrido.\r\n
+comment2.params=
+comment2.target=java.lang.Integer\ get_siguiente_posicion()
+comment2.text=\r\n\ Devuelve\ la\ nueva\ posici\u00F3n\ que\ tendr\u00EDa\ el\ auto.\r\n\ \r\n\ La\ nueva\ posici\u00F3n\ depende\ de\ la\ DIRECCION\ que\ tiene\ el\ auto\ y\ su\ velocidad,\ que\ en\ este\ caso\ es\ la\ misma\ para\ todos\ los\ autos.\r\n\ \ \ \ \ \ -\ Si\ la\ direcci\u00F3n\ es\ hacia\ ADELANTE,\ la\ posici\u00F3n\ del\ auto\ aumenta.\r\n\ \ \ \ \ \ -\ Si\ la\ direcci\u00F3n\ es\ hacia\ ATRAS,\ la\ posici\u00F3n\ del\ auto\ decrementa.\r\n\ \ \ \ \ \ \r\n\ @return\ \ La\ nueva\ posici\u00F3n\ que\ va\ a\ ocupar\ el\ auto.\r\n
+comment3.params=posicion_a_validar
+comment3.target=boolean\ auto_pasa_por(java.lang.Integer)
+comment3.text=\r\n\ Se\ fija\ si\ la\ posici\u00F3n\ a\ validar\ est\u00E1\ entre\ la\ posici\u00F3n\ actual\ del\ auto\ y\ su\ siguiente\ posici\u00F3n\ (\ get_siguiente_posicion()\ )\r\n\ \r\n\ @param\ posicion_a_validar\ \ \ \ Posici\u00F3n\ por\ la\ cual\ queremos\ saber\ si\ estar\u00E1\ en\ la\ posici\u00F3n\ a\ validar\ en\ su\ pr\u00F3ximo\ movimiento.\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ true\ si\ pasa\ por\ la\ posici\u00F3n,\ false\ si\ no\ pasa.\r\n
+comment4.params=mapa
+comment4.target=void\ mover_auto_una_posicion(Mapa)
+comment4.text=\r\n\ L\u00F3gica\ de\ movimiento\ del\ auto\:\r\n\ \r\n\ Si\ el\ pr\u00F3ximo\ movimiento\ del\ auto\ esta\ dentro\ de\ los\ l\u00EDmites\ de\ la\ calles\ entonces\:\r\n\ \ \ \ \ \ -\ Si\ el\ auto\ puede\ avanzar,\ es\ decir,\ no\ choca\ con\ otro\ auto\ ni\ se\ encuentra\ un\ semaforo\ en\ rojo\ (Ayuda\:\ ver\ clase\ Mapa),\ avanzar\r\n\ \ \ \ \ \ -\ Si\ no\ puede\ avanzar\ lanza\ excepci\u00F3n.\r\n\ Si\ el\ auto\ esta\ por\ salirse\ de\ los\ l\u00EDmites\ no\ avanza\ pero\ tampoco\ tira\ excepci\u00F3n.\r\n
+comment5.params=
+comment5.target=Auto.DIRECCION\ get_direccion()
+comment5.text=\r\n\ @return\ \ Direcci\u00F3n\ del\ auto.\r\n
+comment6.params=
+comment6.target=Calle\ get_calle()
+comment6.text=\r\n\ @return\ \ Calle\ actual.\r\n
+comment7.params=
+comment7.target=java.lang.Integer\ get_posicion()
+comment7.text=\r\n\ @return\ \ Posici\u00F3n\ actual\ del\ auto.\r\n
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
