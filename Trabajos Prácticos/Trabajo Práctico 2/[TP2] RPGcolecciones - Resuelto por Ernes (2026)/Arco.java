@@ -1,0 +1,28 @@
+public class Arco extends Elemento
+{
+    private Flecha flecha;
+    
+    public Arco()
+    {
+        super.setNombre("Arco");
+        super.setPeso(15);
+        super.setTipo(TipoElemento.ARMA_FLECHAS);
+    }
+
+    /**
+     * Devuelve la flecha asociada al arco, quedando sin municion.
+     * 
+     * @return  La flecha asociada al arco.
+     */
+    public Flecha getFlecha()
+    {
+        Flecha flecha = this.flecha;
+        this.flecha = null;
+        return flecha;
+    }
+
+    public void setFlecha(Flecha flecha)
+    {
+        this.flecha = flecha;
+    }
+}
