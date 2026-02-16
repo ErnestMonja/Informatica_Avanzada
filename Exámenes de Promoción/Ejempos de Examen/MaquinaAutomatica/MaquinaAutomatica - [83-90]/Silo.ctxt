@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Silo
+comment0.text=\r\n\ Implementar\ la\ clase\ Silo\ que\ extiende\ a\ Recipiente.\ Considere\ los\ casos\ cuando\ no\ hay\ ingrediente\ o\ capacidad\ es\ mayor\ a\ capacidad\ m\u00E1xima\ o\ negativa.\r\n\ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ 16/16\r\n
+comment1.params=ingredienteAlmacenado\ capacidadMaxima
+comment1.target=Silo(Ingrediente,\ int)
+comment1.text=\r\n\ Constructor\ con\ dos\ par\u00E1metros,\ de\ objectos\ de\ la\ clase\ Silo.\r\n\ \r\n\ @param\ ingredienteAlmacenado\ \ \ \ \ El\ ingrediente\ a\ almacenar.\r\n\ @param\ capacidadMaxima\ \ \ \ \ \ \ \ \ \ \ La\ capacidad\ m\u00E1xima\ del\ Silo.\r\n
+comment2.params=ingredienteAlmacenado
+comment2.target=Silo(Ingrediente)
+comment2.text=\r\n\ Constructor\ con\ un\ par\u00E1metro,\ de\ objectos\ de\ la\ clase\ Silo.\r\n\ \r\n\ @param\ ingredienteAlmacenado\ \ \ \ \ El\ ingrediente\ a\ almacenar.\r\n
+comment3.params=
+comment3.target=Ingrediente\ getTipoIngredienteAlmacenado()
+comment3.text=\r\n\ Devuelve\ el\ tipo\ de\ ingrediente\ que\ almacena\ el\ recipiente.\ \r\n\ \r\n\ @return\ \ El\ ingrediente\ almacenado.\r\n
+comment4.params=cantidadAgregada
+comment4.target=void\ agregar(int)
+comment4.text=\r\n\ Agrega\ contenido\ al\ recipiente.\r\n\ \r\n\ @param\ \ cantidadAgregada\ \ \ \ \ \ \ \ \ \ \ \ \ La\ cantidad\ de\ contenido\ a\ agregar.\r\n\ @throws\ CapacidadExcedidaException\ \ \ Cuando\ intenta\ agregarse\ m\u00E1s\ contenido\ del\ que\ el\ recipiente\ puede\ alojar.\r\n\ @throws\ IllegalArgumentException\ \ \ \ \ Cuando\ la\ cantidad\ a\ agregar\ es\ un\ valor\ negativo.\r\n
+comment5.params=cantidadAExtraer
+comment5.target=void\ extraer(int)
+comment5.text=\r\n\ Extrae\ contenido\ del\ recipiente.\r\n\ \r\n\ @param\ \ cantidadAExtraer\ \ \ \ \ \ \ \ \ \ \ \ \ La\ cantidad\ a\ extraer.\r\n\ @throws\ CapacidadExcedidaException\ \ \ Cuando\ intenta\ extraerse\ una\ cantidad\ mayor\ a\ la\ disponible\ en\ el\ recipiente.\r\n\ @throws\ IllegalArgumentException\ \ \ \ \ Cuando\ la\ cantidad\ a\ extraer\ es\ un\ valor\ negativo.\r\n
+numComments=6
