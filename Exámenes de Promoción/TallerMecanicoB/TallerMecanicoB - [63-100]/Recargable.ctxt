@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Recargable
+comment1.params=porcentaje
+comment1.target=void\ setPorcentajeCarga(java.lang.Integer)
+comment1.text=\r\n\ Nuevo\ porcentaje\ de\ carga.\ El\ valor\ final\ no\ puede\ ser\r\n\ menor\ a\ 0%\ ni\ mayor\ a\ 100%.\r\n\ \r\n\ @param\ porcentaje\ Nuevo\ porcentaje\ de\ carga\r\n
+comment2.params=
+comment2.target=java.lang.Integer\ getPorcentajeCarga()
+comment2.text=\r\n\ El\ porcentaje\ de\ carga\ actual,\ siempre\ entre\ 0%\ y\ 100%.\r\n\ \r\n\ @return\ Porcentaje\ de\ carga\r\n
+comment3.params=
+comment3.target=java.lang.Double\ getCostoCargaCompleta()
+comment3.text=\r\n\ Representa\ el\ costo\ de\ la\ recarga\ necesaria\ para\ alzancar\ el\ 100%.\r\n\ Si\ tiene\ 50%\ y\ el\ costo\ es\ de\ $0.25\ por\ cada\ 5%,\ el\ costo\ es\ $2.50\r\n\ \r\n\ @return\ El\ costo\ de\ la\ recarga\r\n
+numComments=4

@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Taller
+comment0.text=\r\n\ La\ clase\ Taller\ modela\ las\ gestiones\ de\ compra\ y\ venta\ de\ autopartes.\ Se\ comienza\ con\ dinero\ en\ la\ billetera\ y\ se\ debe\ comprar\ y\ vender\ autopartes.\r\n\ \r\n\ Nota\:\ Si\ revisa\ el\ c\u00F3digo\ de\ RegistroAutopartes,\ este\ tiene\ un\ constructor\ privado\ lo\ que\ imposibilita\ instanciarlo\ en\ esta\ clase.\ Mi\ soluci\u00F3n\ fue\ usar\r\n\ el\ m\u00E9todo\ ya\ provisto\ getRegistro()\ sin\ embargo\ considero\ que\ se\ trata\ de\ una\ implementaci\u00F3n\ medio\ pobre,\ no\ solo\ en\ este\ constructor,\ sino\ en\ los\ m\u00E9todos\r\n\ de\ la\ clase\ en\ general.\r\n\ \r\n\ Dados\ los\ problemas\ listados\ en\ las\ clases\ anteriores,\ perdi\ bastante\ tiempo\ del\ examen\ conversando\ con\ los\ profesores\ y\ me\ dejo\ sin\ tiempo\ para\ plantear\r\n\ mejor\ esta\ clase,\ por\ lo\ que\ recomendar\u00EDa\ borrar\ todo\ lo\ que\ este\ escrito\ debajo\ del\ "TODO\ -\ implementar\ metodo",\ y\ arrancar\ este\ ejemplo\ de\ cero.\r\n\ \ \ \ \ \ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ 12/30\r\n
+comment1.params=
+comment1.target=Taller()
+comment1.text=\r\n\ Crea\ el\ objeto\ Taller,\ desde\ el\ cual\ se\ gestiona\ al\ resto\ de\ los\ objetos.\r\n\ \r\n\ Debe\ instanciarse\ el\ RegistroAutopartes\ y\ la\ billetera\ con\ $100.\r\n\ \r\n\ Inicialmente\ no\ hay\ ninguna\ autoparte.\r\n
+comment2.params=autoparte\ cantidad
+comment2.target=void\ comprarAutoparte(Item,\ java.lang.Integer)
+comment2.text=\r\n\ Se\ utiliza\ para\ comprar\ una\ autoparte\ y\ agregarla\ al\ catalogo.\r\n\ \r\n\ La\ operacion\ se\ concreta\ si\ hay\ dinero\ suficiente\ en\ la\ billetera.\r\n\ \r\n\ Notar\ que\ la\ billetera\ puede\ lanzar\ DineroInsuficienteException.\r\n\ \r\n\ Si\ no\ hay\ dinero\ suficiente,\ se\ imprime\ el\ mensaje\ "Compra\ fallida".\r\n\ \ \r\n\ @param\ autoparte\ La\ autoparte\ a\ comprar.\r\n\ @param\ cantidad\ \ La\ cantidad\ a\ comprar.\r\n
+comment3.params=autoparte\ cantidad
+comment3.target=void\ venderAutoparte(Item,\ java.lang.Integer)
+comment3.text=\r\n\ Se\ utiliza\ para\ vender\ una\ autoparte\ del\ catalogo.\ El\ precio\ de\ venta\ en\ de\ un\ 25%\ m\u00E1s\ sobre\ el\ precio\ del\ item.\r\n\ \r\n\ La\ operacion\ se\ concreta\ si\ la\ autoparte\ existe\ en\ el\ cat\u00E1logo.\r\n\ \r\n\ Se\ debe\ actualizar\ el\ dinero\ en\ la\ billetera.\r\n\ \r\n\ Notar\ que\ la\ autoparte\ puede\ no\ existir,\ en\ ese\ caso\ se\ debe\ lanzar\ IllegalArgumentException\ e\ imprimir\ el\ mensaje\ "Venta\ fallida".\r\n\ \ \r\n\ @param\ autoparte\ La\ autoparte\ a\ vender.\r\n\ @param\ cantidad\ \ La\ cantidad\ a\ vender.\r\n
+comment4.params=item
+comment4.target=void\ cargarCombustible(Recargable)
+comment4.text=\r\n\ Se\ utiliza\ para\ recargar\ una\ autoparte\ que\ lo\ permita\ al\ m\u00E1ximo.\r\n\ \r\n\ La\ operacion\ se\ concreta\ si\ hay\ dinero\ suficiente\ en\ la\ billetera.\r\n\ \r\n\ Notar\ que\ la\ billetera\ puede\ lanzar\ DineroInsuficienteException.\r\n\r\n\ Si\ no\ hay\ dinero\ suficiente,\ se\ imprime\ el\ mensaje\ "Carga\ fallida".\r\n\ \ \r\n\ @param\ autoparte\ \ \ \ \ La\ autoparte\ a\ comprar.\r\n
+comment5.params=item
+comment5.target=void\ comprarAutoparte(Item)
+comment6.params=item
+comment6.target=void\ venderAutoparte(Item)
+comment7.params=item
+comment7.target=void\ vaciarCombustible(Recargable)
+comment8.params=
+comment8.target=Billetera\ getBilletera()
+comment9.params=
+comment9.target=RegistroAutopartes\ getRegistroAutopartes()
+numComments=10

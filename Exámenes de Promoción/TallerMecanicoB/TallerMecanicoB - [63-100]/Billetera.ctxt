@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Billetera
+comment1.params=
+comment1.target=Billetera()
+comment1.text=\r\n\ Constructor\ por\ defecto\r\n
+comment2.params=pesos
+comment2.target=Billetera(java.lang.Double)
+comment2.text=\r\n\ Constructor\ con\ dinero\ incial.\r\n\ @param\ pesos\ El\ dinero\ en\ la\ billetera\r\n
+comment3.params=pesos
+comment3.target=void\ agregarPesos(java.lang.Double)
+comment3.text=\r\n\ Agrega\ dinero\ a\ la\ billetera.\r\n\ En\ caso\ de\ recibir\ un\ valor\ menor\ o\ igual\ a\ cero\r\n\ lanza\ IllegalArgumentException.\r\n\ \r\n\ @param\ pesos\ La\ cantidad\ de\ pesos\ a\ agregar.\r\n\ @throws\ IllegalArgumentException\ Cuando\ la\ cantidad\ es\ menor\ igual\ a\ cero.\r\n
+comment4.params=pesos
+comment4.target=void\ gastar(java.lang.Double)
+comment4.text=\r\n\ Intenta\ gastar\ una\ cantidad\ de\ pesos.\ Si\ la\ cantidad\ a\ gastar\r\n\ es\ mayor\ a\ la\ disponible,\ lanza\ una\ excepci\u00F3n\ del\ tipo\ \r\n\ DineroInsuficienteException.\r\n\ En\ cambio,\ si\ la\ cantidad\ de\ pesos\ a\ gastar\ es\ negativa\r\n\ lanza\ una\ IllegalArgumentException.\r\n\ \r\n\ @param\ pesos\ La\ cantidad\ de\ pesos\ a\ gastar.\r\n\ @throws\ DineroInsuficienteException\ Cuando\ el\ valor\ es\ mayor\ al\ dinero\ disponible.\r\n\ @throws\ IllegalArgumentException\ Cuando\ la\ cantidad\ es\ menor\ igual\ a\ cero.\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Imprime\ lo\ siguiente\:\r\n\ \r\n\ "Billetera\ ->\ Fondos\:\ ${pesos}"\ \r\n\ \r\n\ Donde\ se\ remplaza\ los\ corchetes\ por\ el\ valor\ de\ la\ variable.\r\n\ Ej\:\r\n\ \r\n\ "Billetera\ ->\ Fondos\:\ $10.0"\r\n
+comment6.params=
+comment6.target=java.lang.Double\ getPesos()
+numComments=7

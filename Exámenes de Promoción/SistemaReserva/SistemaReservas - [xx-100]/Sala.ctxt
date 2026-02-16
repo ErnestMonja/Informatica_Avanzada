@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Sala
+comment0.text=\r\n\ Completar\ la\ clase\ Sala\:\r\n\ \ -\ Implementar\ el\ constructor.\r\n\ \ -\ Definir\ los\ m\u00E9todos\ getNombre(),\ getCapacidad()\ y\ getUbicacion()\r\n\ \ -\ Implementar\ los\ m\u00E9todos\ setCapacidad(...)\ y\ setUbicacion(...).\r\n\ \ -\ Sobrescribir\ el\ m\u00E9todo\ toString()\ para\ mostrar\ una\ descripci\u00F3n\ legible\ de\ la\ sala.\r\n\ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ xx/20\r\n
+comment1.params=nombre\ capacidad\ ubicacion
+comment1.target=Sala(java.lang.String,\ int,\ Ubicacion)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=int\ getCapacidad()
+comment4.params=
+comment4.target=Ubicacion\ getUbicacion()
+comment5.params=capacidad
+comment5.target=void\ setCapacidad(int)
+comment5.text=\r\n\ Setea\ la\ capacidad\ de\ la\ sala\ solo\ si\ la\ capacidad\ es\ mayor\ a\ 0\r\n
+comment6.params=ubicacion
+comment6.target=void\ setUbicacion(Ubicacion)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Retorna\ una\ representaci\u00F3n\ de\ la\ Sala\ como\ String\ con\ el\ formato\r\n\ \ \ \ \ \ "Sala\ <nombre>\ (capacidad\:\ <capacidad>,\ ubicacion\:\ <ubicacion>)"\r\n\ \r\n\ Ejemplo\:\ \r\n\ \ \ \ \ \ Sala\ Uritorco\ (capacidad\:\ 6,\ ubicacion\:\ Norte)\r\n
+numComments=8

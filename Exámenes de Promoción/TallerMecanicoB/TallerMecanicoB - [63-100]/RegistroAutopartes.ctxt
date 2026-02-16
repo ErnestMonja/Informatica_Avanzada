@@ -1,0 +1,30 @@
+#BlueJ class context
+comment0.target=RegistroAutopartes
+comment0.text=\r\n\ La\ clase\ RegistroAutopartes.\r\n\ \r\n\ Nota\:\ Si\ usted\ descomprime\ el\ zip\ de\ este\ proyecto,\ ver\u00E1\ que\ esta\ clase\ no\ existe\ y\ se\ espera\ que\ usted\ genere\ la\ clase,\ y\ copie\ el\ \r\n\ c\u00F3digo\ provisto\ por\ el\ lev\ para\ comenzar\ a\ resolver\ los\ m\u00E9todos.\r\n\ \r\n\ Recomiendo\ revisar\ la\ implementaci\u00F3n\ de\ estos\ m\u00E9todos\ debido\ al\ bajo\ puntaje\ que\ obtuvo\ en\ las\ pruebas\ para\ ser\ una\ clase\ relativamente\r\n\ facil\ (solo\ es\ manejo\ de\ un\ mapa\ b\u00E1sicamente).\r\n\ \ \ \ \ \ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ 17/30\r\n
+comment1.params=
+comment1.target=RegistroAutopartes()
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.util.Map\ getCatalogo()
+comment3.params=
+comment3.target=RegistroAutopartes\ getRegistro()
+comment3.text=\r\n\ Este\ metodo\ asegura\ que\ siempre\ se\ devuelva\ el\ mismo\ objeto\ registro\ desde\ cualquier\ lado\ que\ se\ llame.\ Ej\:\r\n\ \r\n\ RegistroAutopartes\ miRegistro\ \=\ RegistroAutopartes.getRegistro();\r\n\ \r\n\ @return\ \ El\ registro\ existente.\r\n
+comment4.params=
+comment4.target=void\ limpiarRegistro()
+comment4.text=\r\n\ Limpia\ el\ registro,\ dejandolo\ vac\u00EDo.\r\n
+comment5.params=parte
+comment5.target=void\ agregarAutoParte(Item)
+comment5.text=\r\n\ Agrega\ una\ autoparte\ al\ registro.\ \r\n\ \r\n\ @param\ \ parte\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ La\ autoparte\ a\ agregar.\r\n\ @throws\ IllegalArgumentException\ Si\ la\ autoparte\ es\ null.\r\n
+comment6.params=id
+comment6.target=void\ removerAutoParte(java.lang.String)
+comment6.text=\r\n\ Remueve\ una\ autoparte\ del\ registro.\r\n\ \r\n\ @param\ \ id\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ ID\ de\ la\ autoparte\ a\ quitar\ del\ registro.\r\n\ @throws\ IllegalArgumentException\ \ \ \ \ Si\ el\ ID\ es\ null\ o\ cadena\ vac\u00EDa.\r\n
+comment7.params=id
+comment7.target=java.lang.Boolean\ contains(java.lang.String)
+comment7.text=\r\n\ Verifica\ si\ una\ autoparte\ existe\ en\ el\ registro.\r\n\ \r\n\ @param\ \ id\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ ID\ de\ la\ autoparte\ a\ buscar.\r\n\ @throws\ IllegalArgumentException\ \ \ \ \ Si\ el\ ID\ es\ null\ o\ cadena\ vac\u00EDa.\r\n
+comment8.params=
+comment8.target=java.util.List\ getListadoPorDescripcion()
+comment8.text=\r\n\ Genera\ una\ lista\ de\ las\ autopartes\ registradas\r\n\ por\ orden\ alfab\u00E9tico\ de\ la\ descripci\u00F3n.\r\n\ \r\n\ El\ formato\ de\ cada\ fila\ es\ el\ siguiente\:\r\n\ "<ID>\ |\ <descripcion>\ |\ <precio>"\r\n\ \r\n\ por\ ej.\ \:\ "bat60a12v\ |\ Bateria\ auto\ |\ $56000.0"\r\n\ (considerar\ espacios\ en\ blanco)\r\n\ \r\n\ @return\ Una\ lista\ ordenada\ por\ descripci\u00F3n\r\n
+comment9.params=
+comment9.target=java.lang.Integer\ cantidadRegistros()
+numComments=11

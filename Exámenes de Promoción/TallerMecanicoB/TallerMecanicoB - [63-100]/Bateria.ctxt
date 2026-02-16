@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Bateria
+comment0.text=\r\n\ Representa\ una\ bater\u00EDa\ que\ puede\ cargarse\ y\ descargarse.\ La\ unidad\ de\ carga\ depende\ del\ modelo,\ pudiendo\ ser\ cualquier\ porcentaje\ como\ \r\n\ ser\ 1%,\ 2%,\ ...,\ 10%,\ etc.\r\n\ \r\n\ \r\n\ Nota\:\ La\ clase\ tiene\ ciertas\ inconsistencias\ (a\ mi\ parecer),\ con\ respecto\ a\ lo\ que\ dice\ el\ javadoc\ y\ lo\ que\ en\ verdad\ quiere\ el\ lev\ hacer,\r\n\ por\ lo\ tanto\ las\ listo\ a\ continuaci\u00F3n\ para\ facilitarle\ la\ implementaci\u00F3n\ de\ la\ misma\:\r\n\ \ -\ Hubo\ un\ error\ de\ los\ profesores\ en\ el\ ex\u00E1men\ final,\ entre\ el\ javadoc\ dado\ en\ el\ lev\ que\ el\ del\ que\ uno\ recibe\ al\ descomprimir\ este\ \r\n\ \ \ \ proyecto\ del\ zip.\ El\ javadoc\ a\ seguir\ es\ el\ propuesto\ por\ este\ c\u00F3digo\ o\ la\ version\ corregida\ del\ proyecto.\r\n\ \ -\ El\ m\u00E9todo\ toString()\ nunca\ pide\ ser\ sobreescrito\ en\ su\ javadoc\ (no\ tiene\ siquiera\ javadoc)\ sin\ embargo\ para\ obtener\ el\ puntaje\ completo,\ \r\n\ \ \ \ debe\ reescribirse\ de\:\ return\ "Bateria\ []";\ a\ retornar\ en\ cambio\ la\ implementaci\u00F3n\ provista\ en\ esta\ resoluci\u00F3n.\r\n\ \ \ \ \ \ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ 14/20\r\n
+comment1.params=id\ descripcion\ costoUnidadCarga
+comment1.target=Bateria(java.lang.String,\ java.lang.String,\ java.lang.Double)
+comment1.text=\r\n\ Un\ constructor\ para\ una\ bater\u00EDa\ con\ 70%\ de\ carga\ inicial\ y\ unidad\ de\ carga\ de\ 5%.\r\n\ \r\n\ @param\ id\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ c\u00F3digo\ del\ producto.\r\n\ @param\ descripcion\ \ \ \ \ \ \ Detalle\ de\ la\ bater\u00EDa.\r\n\ @param\ costoUnidadCarga\ \ Precio\ del\ costo\ de\ recarga\ por\ unidad.\r\n
+comment2.params=id\ descripcion\ unidadCarga\ costoUnidadCarga
+comment2.target=Bateria(java.lang.String,\ java.lang.String,\ java.lang.Integer,\ java.lang.Double)
+comment2.text=\r\n\ Un\ constructor\ para\ una\ bater\u00EDa\ con\ 50%\ de\ carga\ inicial.\r\n\ \r\n\ @param\ id\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ c\u00F3digo\ del\ producto.\r\n\ @param\ descripcion\ \ \ \ \ \ \ Detalle\ de\ la\ bater\u00EDa.\r\n\ @param\ unidadCarga\ \ \ \ \ \ \ Un\ valor\ en\ porcentaje.\r\n\ @param\ costoUnidadCarga\ \ Precio\ del\ costo\ de\ recarga\ por\ unidad.\r\n
+comment3.params=porcentaje
+comment3.target=void\ setPorcentajeCarga(java.lang.Integer)
+comment3.text=\r\n\ Nuevo\ porcentaje\ de\ carga.\ El\ valor\ final\ no\ puede\ ser\r\n\ menor\ a\ 0%\ ni\ mayor\ a\ 100%.\r\n\ \r\n\ @param\ porcentaje\ \ \ \ Nuevo\ porcentaje\ de\ carga\r\n
+comment4.params=
+comment4.target=java.lang.Integer\ getPorcentajeCarga()
+comment4.text=\r\n\ El\ porcentaje\ de\ carga\ actual,\ siempre\ entre\ 0%\ y\ 100%.\r\n\ \r\n\ @return\ Porcentaje\ de\ carga\r\n
+comment5.params=
+comment5.target=java.lang.Double\ getCostoCargaCompleta()
+comment5.text=\r\n\ Representa\ el\ costo\ de\ la\ recarga\ necesaria\ para\ alzancar\ el\ 100%.\r\n\ \r\n\ Si\ tiene\ 50%\ y\ el\ costo\ es\ de\ $0.25\ por\ cada\ 5%,\ el\ costo\ es\ $2.50\r\n\ \r\n\ @return\ El\ costo\ de\ la\ recarga\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

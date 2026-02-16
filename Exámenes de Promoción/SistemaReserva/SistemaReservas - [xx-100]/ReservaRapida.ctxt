@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ReservaRapida
+comment0.text=\r\n\ Implemente\ la\ Clase\ ReservaRapida\ tal\ que\:\r\n\ \ -\ Extienda\ de\ Reserva.\r\n\ \ -\ Implemente\ la\ interfaz\ Cancelable.\r\n\ \ -\ El\ m\u00E9todo\ cancelar()\ muestre\ un\ mensaje\ simple\ por\ consola\r\n\ \ -\ Reservar\ por\ defecto\ 1\ hora\ (ReservaRapida\ es\ una\ Reserva\ con\ una\ duraci\u00F3n\ de\ 1hr).\r\n\ \r\n\ @author\ \ Resuelto\ por\ Ernes.\r\n\ @version\ 1.0\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PUNTAJE\:\ xx/20\r\n
+comment1.params=sala\ usuario\ inicio
+comment1.target=ReservaRapida(Sala,\ Usuario,\ java.time.LocalDateTime)
+comment1.text=\r\n\ Constructor\ de\ objectos\ para\ la\ clase\ ReservaRapida.\r\n
+comment2.params=
+comment2.target=void\ cancelar()
+comment2.text=\r\n\ \u00BFCancela\ como?\r\n
+comment3.params=
+comment3.target=int\ getDuracionHoraRapida()
+numComments=4
