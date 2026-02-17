@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.target=Personaje
+comment1.params=ataque\ energia\ nombre
+comment1.target=Personaje(int,\ int,\ java.lang.String)
+comment1.text=\r\n\ Inicializa\ un\ personaje.\ Setea\ el\ valor\ de\ ataque\ y\ de\ energia\ Por\ defecto\ si\ inicializa\ la\ posicion\ a\ (0,0)\r\n
+comment10.params=ataque
+comment10.target=void\ incrementarAtaque(int)
+comment10.text=\r\n\ Incrementa\ el\ ataque\ de\ un\ personaje\r\n\ \r\n\ @param\ ataque\ \ \ \ Cantidad\ de\ ataque\ que\ ser\u00E1\ incrementado.\r\n
+comment11.params=pos
+comment11.target=boolean\ setPosicion(Posicion)
+comment11.text=\r\n\ Setter\ de\ la\ variable\ posici\u00F3n.\r\n\ \r\n\ Si\ este\ personaje\ esta\ asociado\ a\ un\ mapa\ (mapa\ \!\=\ null),\ chequea\ que\ la\ posici\u00F3n\ en\ el\ mapa\ este\ libre\r\n\ antes\ de\ setear\ la\ posici\u00F3n.\ Si\ no\ esta\ ocupada,\ setea\ la\ posici\u00F3n.\r\n\ \r\n\ Si\ el\ personaje\ no\ esta\ asociado\ a\ un\ mapa,\ setea\ la\ posici\u00F3n.\r\n\ \r\n\ @return\ \ true\ si\ se\ pudo\ setear\ la\ posici\u00F3n,\ false\ en\ caso\ contrario.\r\n\ \r\n
+comment2.params=m
+comment2.target=boolean\ setMapa(Mapa)
+comment2.text=\r\n\ Setea\ este\ personaje\ en\ el\ Mapa.\ Si\ el\ nombre\ del\ personaje\ ya\ existe\ en\ este\ mapa\ se\ generara\ una\ excepci\u00F3n.\r\n\ \r\n\ @param\ \ \ m\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ El\ Mapa\ donde\ se\ ubicara\ el\ personaje.\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ true\ si\ pudo\ setear\ el\ personaje\ en\ el\ mapa,\ false\ en\ caso\ contrario.\r\n\ @throws\ NombreDuplicadoException\r\n
+comment3.params=
+comment3.target=void\ subirNivel()
+comment3.text=\r\n\ Define\ los\ cambios\ que\ se\ producen\ al\ cambiar\ de\ nivel.\r\n\ \r\n\ Este\ metodo\ debe\ ser\ implementado\ por\ las\ subclases.\r\n
+comment4.params=
+comment4.target=void\ mover()
+comment4.text=\r\n\ Como\ se\ mueve\ de\ una\ posicion\ a\ la\ otra.\r\n\ \r\n\ Este\ metodo\ debe\ ser\ implementado\ por\ las\ subclases.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+comment5.text=\r\n\ Getter\ de\ la\ variable\ nombre.\r\n
+comment6.params=
+comment6.target=Posicion\ getPosicion()
+comment6.text=\r\n\ @return\ \ La\ posicion\ de\ este\ personaje.\r\n
+comment7.params=
+comment7.target=int\ getAtaque()
+comment7.text=\r\n\ @return\ \ El\ valor\ de\ ataque\ de\ este\ personaje.\r\n
+comment8.params=
+comment8.target=int\ getEnergia()
+comment8.text=\r\n\ \r\n\ @return\ \ La\ energ\u00EDa\ de\ este\ personaje.\r\n
+comment9.params=energia
+comment9.target=void\ incrementarEnergia(int)
+comment9.text=\r\n\ Incrementa\ la\ energ\u00EDa\ de\ este\ personaje.\r\n\ \r\n\ @param\ energia\ \ \ Cantidad\ de\ energ\u00EDa\ que\ ser\u00E1\ incrementada.\r\n
+numComments=12
