@@ -1,15 +1,13 @@
-
 public abstract class Mision
 {
     private String nombre;
     private Integer nivelRequerido;
 
     /**
-     * Crea una nueva mision con su nombre y el requerimiento de nivel
-     * necesario para realizarla
+     * Crea una nueva misión con su nombre y el requerimiento de nivel necesario para realizarla.
      *
-     * @param nombre El nombre de la mision
-     * @param nivelRequerido El nivel requerido para participar de la mision
+     * @param nombre         El nombre de la misión.
+     * @param nivelRequerido El nivel requerido para participar de la misión.
      */
     public Mision(String nombre, Integer nivelRequerido)
     {
@@ -17,7 +15,7 @@ public abstract class Mision
         this.nivelRequerido = nivelRequerido;
     }
 
-    public abstract Boolean validarCumplimiento(Personaje p) ;
+    public abstract Boolean validarCumplimiento(Personaje p);
 
     public String getNombre()
     {
