@@ -10,11 +10,12 @@ import java.util.List;
  */
 public class Arma extends Elemento
 {
-    List<Municion> municiones;
-    TipoMunicion tipoMunicion;
+    private List<Municion> municiones;
+    private TipoMunicion tipoMunicion;
 
     /**
-     * Constructor de Arma
+     * Constructor de Arma.
+     * 
      * @param   nombre
      * @param   tipoMunicion
      */
@@ -31,8 +32,8 @@ public class Arma extends Elemento
      * 
      * Lanza MunicionNoValidaException si la munición no coincide con el tipo de munición del arma.
      * 
-     * @param  m                            la municion a cargar
-     * @throws MunicionNoValidaException    si la municion no coincide con el tipo de municion del arma.
+     * @param  m                            La munición a cargar.
+     * @throws MunicionNoValidaException    Si la munición no coincide con el tipo de munición del arma.
      */
     public void cargar(Municion m) throws MunicionNoValidaException
     {
@@ -45,11 +46,11 @@ public class Arma extends Elemento
     }
 
     /**
-     * Remueve la primera municion de la lista y retorna el danio de la misma.
+     * Remueve la primera munición de la lista y retorna el daño de la misma.
      * 
      * Arroja ArmaDescargadaException si no hay municiones.
      * 
-     * @return                          El valor de danio de la municion removida.
+     * @return                          El valor de daño de la munición removida.
      * @throws ArmaDescargadaException  Si no hay municiones disponibles.
      */
     public Integer disparar() throws ArmaDescargadaException
@@ -66,7 +67,7 @@ public class Arma extends Elemento
     /**
      * Verifica si existen municiones cargadas en la lista.
      * 
-     * @return  true si hay municiones cargadas, false de lo contrario
+     * @return  true si hay municiones cargadas, false de lo contrario.
      */
     public Boolean isCargada()
     {
