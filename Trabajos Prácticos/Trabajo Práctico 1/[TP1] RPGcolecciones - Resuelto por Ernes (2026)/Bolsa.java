@@ -3,7 +3,7 @@ import java.util.TreeMap;
 
 /** 
  * Modela la bolsa que utiliza el Personaje para transportar elementos. La capacidad se determina por el peso
- * maximo que soporta.Todos los objetos se incluyen en un mapa.
+ * maximo que soporta. Todos los objetos se incluyen en un mapa.
  * 
  * @author  Maximiliano A. Eschoyez y resuelto por Ernes.
  * @version 1.0
