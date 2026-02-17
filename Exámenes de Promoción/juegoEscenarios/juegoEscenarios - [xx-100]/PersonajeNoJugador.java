@@ -4,13 +4,12 @@ public class PersonajeNoJugador extends Personaje
     private Elemento recompensa;
 
     /**
-     * Crea un nuevo personaje no jugador con nombre, vida
-     * una mision y su recompensa por cumplirla.
+     * Crea un nuevo personaje no jugador con nombre, vida una misión y su recompensa por cumplirla.
      *
-     * @param nombre El nombre del personaje
-     * @param vida La cantidad de vida del personaje
-     * @param mision La mision que asignara a un personaje jugador que la solicite
-     * @param recompensa La recompensa por cumplir la mision
+     * @param nombre        El nombre del personaje.
+     * @param vida          La cantidad de vida del personaje.
+     * @param mision        La misión que asignará a un personaje jugador que la solicite.
+     * @param recompensa    La recompensa por cumplir la misión.
      */
     public PersonajeNoJugador(String nombre, Integer vida, Mision mision, Elemento recompensa)
     {
@@ -20,9 +19,9 @@ public class PersonajeNoJugador extends Personaje
     }
 
     /**
-     * Asigna una mision a un personaje jugador.
+     * Asigna una misión a un personaje jugador.
      *
-     * @param personajeJugador El personaje jugador al cual se le asignara la mision
+     * @param personajeJugador  El personaje jugador al cual se le asignará la misión.
      */
     public void asignarMision(PersonajeJugador personajeJugador)
     {
@@ -30,12 +29,12 @@ public class PersonajeNoJugador extends Personaje
     }
 
     /**
-     * Asigna la recompensa de una mision completada a un personaje jugador.
-     * Debe agrega el item a la bolsa, limpiar la mision actual y subir de nivel
-     * del personaje.
+     * Asigna la recompensa de una misión completada a un personaje jugador.
+     * 
+     * Debe agrega el item a la bolsa, limpiar la misión actual y subir de nivel del personaje.
      *
-     * @param personajeJugador El personaje jugador al cual se le asignara la recompensa
-     * @throws IllegalStateException si la mision no ha sido finalizada, si la bolsa del personaje esta llena
+     * @param  personajeJugador         El personaje jugador al cual se le asignará la recompensa.
+     * @throws IllegalStateException    Si la misión no ha sido finalizada, si la bolsa del personaje está llena.
      */
     public void asignarRecompensa (PersonajeJugador personajeJugador)
     {
