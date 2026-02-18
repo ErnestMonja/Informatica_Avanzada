@@ -1,25 +1,27 @@
-public class Arco extends Elemento implements Portable {
+public class Arco extends Elemento implements Portable
+{
     private Flecha flecha;
 
-    public Arco() {
+    public Arco()
+    {
         setNombre("Arco");
         setPeso(15);
     }
 
     /**
-     * Devuelve la flecha asociada al arco, quedando
-     * sin municion.
+     * Devuelve la flecha asociada al arco, quedando sin munición.
      * 
-     * @return La flecha asociada al arco.
+     * @return     La flecha asociada al arco.
      */
-    public Flecha getFlecha() {
+    public Flecha getFlecha()
+    {
         Flecha flecha = this.flecha;
         this.flecha = null;
         return flecha;
     }
 
-    public void setFlecha(Flecha flecha) {
+    public void setFlecha(Flecha flecha)
+    {
         this.flecha = flecha;
     }
-    
 }
