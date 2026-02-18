@@ -4,11 +4,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * Genera el mapa con habitaciones conectadas y
- * objetos en ellas.
+ * Genera el mapa con habitaciones conectadas y objetos en ellas.
  * 
- * Implementa el patron sigleton para evitar
- * multiples instancias.
+ * Implementa el patron sigleton para evitar múltiples instancias.
  */
 
 public class Mapa
@@ -18,8 +16,7 @@ public class Mapa
     private Habitacion inicio;
 
     /**
-     * El constructor es privado para que no se pueda
-     * instanciar por fuera.
+     * El constructor es privado para que no se pueda instanciar por fuera.
      */
     private Mapa()
     {
@@ -29,10 +26,9 @@ public class Mapa
     }
 
     /**
-     * Este metodo devuelve el Mapa.  Si no se encuentra
-     * instanciado, se lo crea.
+     * Este método devuelve el Mapa.  Si no se encuentra instanciado, se lo crea.
      * 
-     * @return El mapa desde la posicion inicial.
+     * @return     El mapa desde la posición inicial.
      */
     public static Mapa getInstance()
     {
@@ -64,8 +60,7 @@ public class Mapa
     /**
      * Configura la salidas de cada habitacion.
      * 
-     * Se utiliza reflection para invocar los metodos
-     * en base al nombre de la habitacion.
+     * Se utiliza reflection para invocar los métodos en base al nombre de la habitación.
      */
     private void configurarConexiones ()
     {
@@ -83,7 +78,7 @@ public class Mapa
         }
     }
 
-    /* *** Los siguientes metodos configuran las habitaciones *** */
+    /* *** Los siguientes métodos configuran las habitaciones *** */
 
     private void configCasa(Habitacion h)
     {
